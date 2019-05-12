@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login page</title>
+	<link rel="stylesheet" href="login/login.css">
+	<script src="login/login.js" defer></script>
+</head>
+<body>
+	<div id="forms-container">
+		<form action="node1.js" id="signin-form" style="display: none;">
+			<h3>Sign in</h3>
+			<input type="hidden" name="form" value="user-signin">
+			<label><span>Username: </span><input class="form-input" type="text" autocomplete="on" name="username" required minlength="3" maxlength="20"></label>
+			<label><span>Password: </span><input class="form-input" type="password" name="password" required minlength="6" maxlength="20"></label>
+			<input class="submit-btn" id="user-signin" type="submit" value="Sign in">
+			<p class="change-form">
+				<span id="toAdminForm">Sign in as admin</span>
+			</p>
+		</form>
+		<form action="node1.js" id="admin-form" style="display: none;">
+			<h3>Sign in as admin</h3>
+			<input type="hidden" name="form" value="admin-signin">
+			<label><span>Username: </span><input class="form-input" type="text" autocomplete="on" name="username" required minlength="3" maxlength="20"></label>
+			<label><span>Password: </span><input class="form-input" type="password" name="password" required minlength="6" maxlength="20"></label>
+			<input class="submit-btn" id="admin-signin" type="submit" value="Sign in">
+			<p class="change-form">
+				<span id="toUserForm">Sign in as user</span>
+			</p>
+		</form>
+	</div>
+	<div id="warning">
+		<p>Invalid username or password</p>
+	</div>
+</body>
+</html>

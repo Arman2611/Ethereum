@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin page</title>
+	<link rel="stylesheet" href="admin/admin.css">
+	<script src="admin/admin.js" defer></script>
+</head>
+<body>
+	<header>
+		<p>
+			<span>Hello, </span>
+			<span id="admin-name"></span>
+		</p>
+		<a href="node1.js?logOut" id="logout-btn">Log out</a>
+	</header>
+	<main>
+		<nav>
+			<div class="nav-element nav-active">Users</div>
+			<div class="nav-element">Settings</div>
+		</nav>
+		<div class="main-content">
+			<div class="content-page" id="user-list">
+				<section class="user-cell user-list-header">
+					<h3>User name</h3>
+					<span class="user-id">User ID</span>
+					<span class="user-login">User login</span>
+					<span class="user-country">User country</span>
+				</section>
+			</div>
+			<div class="content-page" id="settings-list" style="display: none">
+				<div class="settings-item" id="new-user">Add new user</div>
+				<div class="settings-item" id="delete-user">Delete a user</div>	
+				<div id="add-user-menu" style="display: none">
+					<form id="add-user-form" action="node1.js" method="GET">
+						<input type="hidden" name="form" value="add-user">
+						<span id="exit-form">X</span>
+						<h3>Add new user's data</h3>
+						<label><span>Username: </span><input class="new-user-input" type="text" name="username" autocomplete="off"></label>
+						<label><span>Password: </span><input class="new-user-input" type="password" name="password"></label>
+						<label><span>Full name: </span><input class="new-user-input" type="text" name="fullname"></label>
+						<label><span>Country: </span><input class="new-user-input" type="text" name="country"></label>
+						<input id="sign-in" type="submit" value="Sign in">
+					</form>	
+				</div>						
+			</div>
+		</div>
+	</main>
+	<footer>
+		<span>2018-2019 © Ethereum Corporation. All rights are reserved</span>
+	</footer>
+</body>
+</html>

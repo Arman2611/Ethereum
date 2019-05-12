@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ethereum Corporation</title>
+	<link rel="stylesheet" href="index/index.css">
+	<script src="index/index.js" defer></script>
+</head>
+<body>
+	<header>
+		<div class="website-name">
+			<span id="homepage">Ethereum</span>
+		</div>
+		<div class="logo-box">
+			<img class="logo" src="images/ethereum.png" alt="">
+		</div>
+		<div class="login-section">
+			<div class="login-btn" id="signin-btn">Sign in</div>
+			<div class="login-btn" id="signup-btn">Sign up</div>
+		</div>
+	</header>
+	<main>
+		<div class="welcome-box">
+			<div class="welcome-img">
+				<img src="images/andalusia.jpg" alt="">
+			</div>
+			<div class="welcome-cover">
+				<a href="#locations" id="elevator">Explore the world with us</a>
+			</div>
+		</div>
+		<div id="locations">
+			<hr class="post-rule">
+			<div class="post">
+				<div class="post-content">
+					<div class="post-img">
+						<img src="images/tekapo.jpg" alt="">
+					</div>
+					<div class="post-text">
+						<h3>Lake Tekapo, New Zeland</h3>
+						<p>Lake Tekapo is the second-largest of three roughly parallel lakes running north–south along the northern edge of the Mackenzie Basin in the South Island of New Zealand (the others are Lake Pukaki and Lake Ohau). It covers an area of 83 square kilometres (32 sq mi), and is at an altitude of 710 metres (2,330 ft) above sea level.</p>
+						<p>The lake is fed at its northern end by the braided Godley River, which has its source in the Southern Alps to the north. The lake is a popular tourist destination, and several resort hotels are located at the township of Lake Tekapo at the lake's southern end. The Lake Tekapo Regional Park, administered by Environment Canterbury, is located on the southern shore of the lake.</p>
+					</div>
+				</div>
+			</div>
+			<hr class="post-rule">
+			<div class="post">
+				<div class="post-content">
+					<div class="post-img post-reverse">
+						<img src="images/flakstad.jpg" alt="">
+					</div>
+					<div class="post-text">
+						<h3>Flakstad, Norway</h3>
+						<p>Flakstad is a municipality in Nordland county, Norway. It is part of the traditional district of Lofoten. The administrative centre of the municipality is the village of Ramberg. Other villages include Fredvang, Napp, Nusfjord, and Vareid.</p>
+						<p>The municipality is located in the Lofoten Islands and comprises the entire island of Flakstadøya and the northern part of the island of Moskenesøya. The European route E10 highway runs across the whole municipality.</p>
+					</div>
+				</div>
+			</div>
+			<hr class="post-rule">
+			<div class="post">
+				<div class="post-content">
+					<div class="post-img">
+						<img src="images/oahu.jpg" alt="">
+					</div>
+					<div class="post-text">
+						<h3>Oahu, Hawaii</h3>
+						<p>Oʻahu, known as "The Gathering Place", is the third-largest of the Hawaiian Islands. It is home to roughly one million people—about two-thirds of the population of the U.S. state of Hawaiʻi. The state capital, Honolulu, is on Oʻahu's southeast coast.</p>
+						<p>Oʻahu is 44 miles (71 km) long and 30 miles (48 km) across. Its shoreline is 227 miles (365 km) long. The island is composed of two separate shield volcanoes: the Waiʻanae and Koʻolau Ranges, with a broad "valley" or saddle (the central Oʻahu Plain) between them. The highest point is Kaʻala in the Waiʻanae Range, rising to 4,003 feet (1,220 m) above sea level.</p>
+					</div>
+				</div>
+			</div>
+			<hr class="post-rule">
+		</div>
+		<div id="forms-container" style="display: none;">
+			<span id="exit-form">X</span>
+			<form action="node1.js" id="signin-form" style="display: none;">
+				<h3>Sign in</h3>
+				<input type="hidden" name="form" value="user-signin">
+				<label><span>Username: </span><input class="form-input" type="text" autocomplete="on" name="username" required minlength="3" maxlength="20"></label>
+				<label><span>Password: </span><input class="form-input" type="password" name="password" required minlength="6" maxlength="20"></label>
+				<input class="submit-btn" id="user-signin" type="submit" value="Sign in">
+				<p class="change-form">
+					<span id="toAdminForm">Sign in as admin</span>
+				</p>
+			</form>
+			<form action="node1.js" id="admin-form" style="display: none;">
+				<h3>Sign in as admin</h3>
+				<input type="hidden" name="form" value="admin-signin">
+				<label><span>Username: </span><input class="form-input" type="text" autocomplete="on" name="username" required minlength="3" maxlength="20"></label>
+				<label><span>Password: </span><input class="form-input" type="password" name="password" required minlength="6" maxlength="20"></label>
+				<input class="submit-btn" id="admin-signin" type="submit" value="Sign in">
+				<p class="change-form">
+					<span id="toUserForm">Sign in as user</span>
+				</p>
+			</form>
+			<form action="node1.js" id="signup-form" style="display: none;">
+				<input type="hidden" name="form" value="user-signup">
+				<h3>Sign up</h3>
+				<label><span>Username: </span><input class="form-input" type="text" name="username" autocomplete="off" required minlength="3" maxlength="20" autocomplete="off"></label>
+				<label><span>Password: </span><input class="form-input" type="password" name="password" required minlength="6" maxlength="20" autocomplete="off"></label>
+				<label><span>Full name: </span><input class="form-input" type="text" name="fullname" required minlength="3" maxlength="40" autocomplete="off"></label>
+				<label><span>Country: </span><input class="form-input" type="text" name="country" required minlength="2" maxlength="40" autocomplete="off"></label>
+				<input class="submit-btn" id="sign-up" type="submit" value="Sign up">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<h3>2018 - 2019 © Ethereum Corporation</h3>
+		<p>All right are reserved</p>
+	</footer>
+</body>
+</html>

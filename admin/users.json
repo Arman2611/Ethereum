@@ -1,0 +1,40 @@
+{
+    "users": [
+        {
+            "id": "001",
+            "login": "Robert1",
+            "name": "Robert Dahlstrom",
+            "country": "Sweden"
+        },
+        {
+            "id": "002",
+            "login": "Aharon1",
+            "name": "Aharon Chang",
+            "country": "Canada"
+        },
+        {
+            "id": "003",
+            "login": "Glen1",
+            "name": "Glen Baxter",
+            "country": "England"
+        },
+        {
+            "id": "004",
+            "login": "John1",
+            "name": "John Doe",
+            "country": "USA"
+        },
+        {
+            "id": "005",
+            "login": "Igor1",
+            "name": "Igor Stojanovich",
+            "country": "Serbia"
+        },
+        {
+            "id": "006",
+            "login": "Gayane1",
+            "name": "Gayane Nasibyan",
+            "country": "Armenia"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+* {box-sizing: border-box}
+
+body {
+	margin: 0px;
+	background-color: silver;
+}
+header {
+	background-color: #3786E1;
+	padding: 10px;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+header p {color: white}
+#logout-btn {
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border: 1px solid black;
+}
+#logout-btn:hover {box-shadow: 0 2px 10px 0px black}
+main {
+	display: flex;
+}
+main > nav {
+	background-color: #262626;
+	width: 200px;
+	height: 1200px;
+	padding: 20px 5px;
+}
+.nav-element {
+	padding: 10px 30px;
+	color: #9F9F9F;
+	cursor: pointer;
+	font-size: 18px;
+	margin: 2px 0;
+}
+.nav-element:hover {
+	background-color: #3E8DD2;
+	color: white;
+}
+.nav-active {
+	background-color: #3E8DD2;
+	color: white;
+}
+.main-content {
+	background-color: white;
+	width: calc(100% - 200px);
+}
+.user-cell {
+	display: flex;
+	border: 1px solid silver;
+	align-items: center;
+	padding: 2px 10px;
+}
+.user-cell:hover {
+	background-color: silver;
+}
+.user-list-header{
+	font-weight: bold;
+}
+.user-cell > h3 {
+	width: 200px;
+}
+.user-id {
+	width: 120px;
+}
+.user-login {
+	width: 150px;
+}
+.user-country {
+	width: 150px;
+}
+#posts-list {
+	padding: 20px 10px;
+}
+.posts-info {
+	padding: 0px 15px 15px;
+}
+#posts-status {
+	font-size: 18px;
+}
+#add-post:hover {
+	background-color: #6CFA6E;
+}
+#settings-list {
+	padding: 20px 10px;
+}
+.settings-item {
+	margin: 10px 20px;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid silver;
+	background-color: aqua;
+	cursor: pointer;
+}
+#change-user-data:hover {
+	background-color: #6CFA6E;
+}
+#delete-accaunt:hover {
+	background-color: purple;
+}
+footer {
+	background-color: #3786E1;
+	padding: 10px;
+}
